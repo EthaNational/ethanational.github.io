@@ -112,10 +112,16 @@ function init() {
     shopItem("pps",2000,500)
     shopItem("ppc",5750,1215)
     shopItem("pps",8500,9525.5)
+    shopItem("ppc",76500,11185)
+    shopItem("pps",10115,125000)
+    shopItem("ppc",250000,45000)
+    shopItem("pps",10115,125000)
+    shopItem("ppc",1225000,605000)
+    shopItem("pps",1775000,2300000)
+    shopItem("ppc",20050000,9005000)
+    shopItem("pps",24450000,67000000)
 };
 
 /* Initialization */
 
 init();
-
-
