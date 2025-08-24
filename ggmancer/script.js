@@ -99,7 +99,7 @@ function init() {
     document.addEventListener("touchstart",function(){
         setInterval(function() {
             backgroundMusic.play()
-        },0.1)
+        })
     })
     // Shop Items
     shopItem("ppc",10,1)
@@ -117,4 +117,5 @@ function init() {
 /* Initialization */
 
 init();
+
 
