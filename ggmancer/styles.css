@@ -1,0 +1,66 @@
+html {
+    background-color: rgb(22, 22, 22);
+}
+
+@font-face {
+    font-family: vcr-osd-mono;
+    src: url(assets/vcr_osd_mono.ttf);
+}
+
+/* Paragraphs */
+p {
+    color: rgb(25, 120, 25);
+    width: 100vb;
+    height: 3vb;
+    font-size: 3vb;
+    font-family: "vcr-osd-mono", "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    width: 100vb;
+    height: 10vb;
+    font-size: 10vb;
+    font-family: "vcr-osd-mono", "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    margin: auto;
+    padding: 1vb;
+}
+
+/* Buttons */
+button {
+    color: rgb(22, 22, 22);
+    background-color: rgb(25, 120, 25);
+    padding: 2vb;
+    width: 42vb;
+    height: 7vb;
+    font-size: 2.25vb;
+    font-family: "vcr-osd-mono", "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    border: none;
+    margin: auto;
+    margin-bottom: 1vb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.ggmancer {
+    color: rgb(25, 120, 25);
+    background-color: rgb(0, 0, 0, 0);
+    width: 30vb;
+    height: 30vb;
+    font-size: 5vb;
+    font-family: "vcr-osd-mono", "Lucida Console", "Courier New", monospace;
+    border: none;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
