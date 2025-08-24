@@ -62,15 +62,25 @@ function shopItem(type,price,increase) {
         const clonedAudio = buySound.cloneNode()
         clonedAudio.play()
     })
+     newItem.addEventListener("touchstart",function() {
+        const clonedAudio = buySound.cloneNode()
+        clonedAudio.play()
+    })
     if (type=="ppc") {
         newItem.innerHTML = "$".concat(price," -> +",increase," Points per Click")
         newItem.addEventListener("click",function() {
+            ppcBuy(Number(price),Number(increase))
+        })
+        newItem.addEventListener("touchstart",function() {
             ppcBuy(Number(price),Number(increase))
         })
     }
     if (type=="pps") {
         newItem.innerHTML = "$".concat(price," -> +",increase," Points per Second")
         newItem.addEventListener("click",function() {
+            ppsBuy(Number(price),Number(increase))
+        })
+        newItem.addEventListener("touchstart",function() {
             ppsBuy(Number(price),Number(increase))
         })
     }
@@ -80,7 +90,13 @@ function shopItem(type,price,increase) {
 function init() {
     setInterval(update)
     button.addEventListener("click",onClick);
+    button.addEventListener("touchstart",onClick);
     document.addEventListener("click",function(){
+        setInterval(function() {
+            backgroundMusic.play()
+        })
+    })
+    document.addEventListener("touchstart",function(){
         setInterval(function() {
             backgroundMusic.play()
         })
